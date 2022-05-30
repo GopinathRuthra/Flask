@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 60%;
+          height: 50%;
+        }
+        
+        td, th {
+          border: 1px solid #080000;
+          text-align: left;
+          padding : 8px;
+        }
+
+        th {
+            text-align: center;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+      
+        body {
+            background-image: url("Disp_image.jpg");
+        }
+        </style>
+        <title>Confirmation</title>
+        </head>
+        <h1> Registration Successfull</h1>
+<body onload="setData()">
+    <table>
+        <caption>Customer Registration Details</caption>
+        <tr>
+            <th>Details</th>
+            <th>Customer Information</th>
+        </tr>
+        <tr>
+            <td>Customer Name:</td>
+            <td>{{Customername}}</td>
+        </tr>
+        <tr>
+            <td>Job Role:</td>
+            <td>{{Job}}</td>
+        </tr>
+        <tr>
+            <td>Business Name:</td>
+            <td>{{BName}}</td>
+        </tr>
+        <tr>
+            <td>Team Name:</td>
+            <td>{{tname}}</td>
+        </tr>
+        <tr>
+            <td>Customer Type:</td>
+            <td>{{CType}}</td>
+        </tr>
+        <tr>
+            <td>State:</td>
+            <td>{{State}}</td>
+        </tr>
+        <tr>
+            <td>Tenure:</td>
+            <td>{{Tenure}}</td>
+        </tr>
+        <tr>
+            <td>Goals:</td>
+            <td>{{Goals}}</td>
+        </tr>
+        <tr>
+            <td>Service:</td>
+            <td>{{Service}}</td>
+        </tr>
+        <tr>
+            <td>Product:</td>
+            <td>{{Product}}</td>
+        </tr>
+    </table>
+</body>
+</html>
