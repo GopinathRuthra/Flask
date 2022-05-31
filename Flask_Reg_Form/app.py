@@ -8,7 +8,7 @@ app=Flask(__name__)
 def homepage():
     return render_template('index.html')
 
-@app.route('/display.html', methods=['POST','GET'])
+@app.route('/display', methods=['POST','GET'])
 def index():
     if request.method=="POST":
         a=request.form.get('Customername')
