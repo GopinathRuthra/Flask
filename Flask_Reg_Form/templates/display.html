@@ -32,7 +32,36 @@
 <body onload="setData()">
     <table>
         <caption>Customer Registration Details</caption>
-        <tr>
+        <thead>  
+            <td>Customer Name</td>  
+            <td>Job Role</td>  
+            <td>Business Name</td>  
+            <td>Team Name</td>  
+            <td>Customer Type</td>  
+            <td>State</td>  
+            <td>Tenure</td>  
+            <td>Goals</td>  
+            <td>Service</td>  
+            <td>Product</td>  
+        </thead>  
+          
+        {% for row in rows %}  
+          
+            <tr>    
+                <td>{{row[1]}}</td>  
+                <td>{{row[2]}}</td>  
+                <td>{{row[3]}}</td>
+                <td>{{row[4]}}</td> 
+                <td>{{row[5]}}</td> 
+                <td>{{row[6]}}</td> 
+                <td>{{row[7]}}</td> 
+                <td>{{row[8]}}</td> 
+                <td>{{row[9]}}</td>
+                <td>{{row[10]}}</td>   
+            </tr>  
+          
+        {% endfor %}  
+        <!-- <tr>
             <th>Details</th>
             <th>Customer Information</th>
         </tr>
@@ -75,7 +104,7 @@
         <tr>
             <td>Product:</td>
             <td>{{Product}}</td>
-        </tr>
+        </tr> -->
     </table>
 </body>
 </html>
